@@ -1,0 +1,184 @@
+/* You can add global styles to this file, and also import other style files */
+
+.container-fluid, .col-1 {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+h1 {
+    font-size: 2em;
+    border-bottom: 1px solid;
+    border-color:slategray;
+}
+
+.imagen-recuadrada {
+    outline: 1px solid #ffffff !important;
+    outline-offset: -6px !important;
+}
+
+/* Fonts */
+p, li {
+    font-family: 'Be Vietnam Pro';
+    margin: 0;
+}
+
+h1 {
+    font-style: italic;
+
+}
+
+/* seccion xxx */
+section {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.titulo-seccion { 
+    margin-bottom: 1em;
+}
+
+/* seccion: acerca de */
+li {
+    list-style: none;
+    margin-bottom: 0.5em;
+}
+
+/* seccion: experiencia */
+.bg-experiencia-container {
+    background-color: #e2f4fa;
+}
+
+.bg-experiencia-item {
+    background-color: #ffffff;
+}
+.img-experiencia {
+    max-width: 340px;
+    max-height: 140px;
+}
+
+/* seccion: educacion */
+#educacion p {
+    margin: 0;
+}
+
+.item-educacion {
+    margin-bottom: 1em;
+}
+
+.educacion-item-img {
+    max-height: 3em;
+}
+
+p.educacion-institucion {
+    font-weight: bold;
+}
+
+p.educacion-carrera {
+    font-style: italic;
+    padding-left: 1em;
+    font-size: 0.8em;
+}
+
+p.educacion-titulo {
+    padding-left: 1.5em;
+    padding-top:0.5em;
+    font-size: 0.8em;
+}
+
+p.educacion-periodo {
+    font-style: italic;
+    padding-left: 1.5em;
+    font-size: 0.8em;
+}
+
+/* seccion: habilidades */
+#set-habilidades {
+    display: none;
+}
+.bg-habilidades-container {
+    background-image: linear-gradient(to bottom right, #000000, #1e465d);
+}
+#habilidades h1 {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+/* seccion: proyectos */
+#proyectos {
+    padding-bottom: 0;
+}
+.bg-proyectos-container {
+    background-color: #dadada;
+    background-image: url(./assets/imagenes/proyectos-pared-600x360px@2x.jpg);
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: 30%;
+}
+.bg-proyectos-end-container {
+    text-align: center;
+}
+
+.bg-proyectos-end-container img {
+    width: 30%;
+    
+}
+
+.item-proyecto {
+    max-height: 16em !important;
+    overflow: hidden;
+    border-bottom: #000000 solid 1px;
+    border-top: #000000 solid 1px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.4);
+   
+}
+.bg-item-proyecto {
+    background-color: #cccccc;
+}
+
+.info-item-proyecto {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+p.proyecto-titulo {
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.2em;
+}
+
+p.proyecto-ambito {
+    font-style: italic;
+    padding-left: 1em;
+    font-size: 0.8em;
+}
+
+p.proyecto-periodo {
+    font-style: italic;
+    padding-left: 1.5em;
+    font-size: 0.8em;
+}
+
+p.proyecto-descripcion {
+    padding-left: 1em;
+    padding-top:0.5em;
+    font-size: 0.8em;
+}
+
+p.proyecto-link {
+    border-top: #000000 solid 1px;
+    margin-left: 1em;
+    margin-top:1em;
+    padding-right: 1em;
+    padding-top:0.3em;
+    font-size: 0.8em;
+    width: fit-content;
+}
+
+
+footer {
+    text-align: center;
+    border-top:#1e465d solid 2px;
+    padding: 1em;
+}
