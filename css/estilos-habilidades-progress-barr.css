@@ -1,0 +1,98 @@
+.barra-porcentaje-habilidades {
+  background: repeating-linear-gradient(
+    to right,
+    rgb(255, 255, 255, 1),
+    rgb(255, 255, 255, 1) 2px,
+    rgb(0, 0, 0, 0) 2px,
+    rgb(0, 0, 0, 0) calc((100% / 11) + 3px)
+  );
+}
+
+.escala .col-1 {
+    color: #ffffff;
+    font-size: 0.8em;
+    position: relative;
+    margin-top: 1em;
+    text-align: right;
+}
+
+.skill-name-container {
+  position: absolute;
+  padding-top: 0.8em;
+  overflow: hidden;
+}
+
+.skill-name {
+  color: var(--color);
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: right;
+  text-transform: uppercase;
+  font-style: italic;
+  text-shadow: 2px 2px #282828;
+}
+
+.skill-pre-bar-container {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  padding-right: 0;
+}
+.skill-pre-bar {
+  height: 1.5em;
+  background-color: var(--color);
+  border-bottom-left-radius: 0.7em;
+  border-top-left-radius: 0.7em;
+}
+
+.skill-bar-container {
+  padding-left: 0;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.skill-bar {
+  height: 1.5em;
+  background-color: var(--color);
+  border-left: 2px #ffffff solid;
+  border-bottom-right-radius: 0.7em;
+  border-top-right-radius: 0.7em;
+  position: relative;
+  animation: fillBars 4s 1;
+  max-width: var(--max-width);
+  overflow: inherit;
+}
+
+.skill-bar::before {
+  content: attr(valor);
+  position: absolute;
+  padding: 4px 6px;
+  background-color: var(--color);
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-bar::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color);
+  top: -15px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+@keyframes fillBars {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
