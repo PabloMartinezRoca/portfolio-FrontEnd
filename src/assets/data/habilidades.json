@@ -1,0 +1,42 @@
+{
+  "habilidades": {
+    "lista": [
+      {
+        "nombre": "trabajo en equipo",
+        "valor": "85%",
+        "color": "01cc9b",
+        "colorHigh": "67e0c3"
+      },
+      {
+        "nombre": "inglés",
+        "valor": "60%",
+        "color": "7de314",
+        "colorHigh": "b1ee72"
+      },
+      {
+        "nombre": "manejo de tecnologías",
+        "valor": "90%",
+        "color": "5059ab",
+        "colorHigh": "969bcd"
+      },
+      {
+        "nombre": "liderazgo",
+        "valor": "90%",
+        "color": "14a0c0",
+        "colorHigh": "6bbcc5"
+      },
+      {
+        "nombre": "proactividad y resiliencia",
+        "valor": "95%",
+        "color": "4f7bac",
+        "colorHigh": "95b0cd"
+      },
+      {
+        "nombre": "creatividad",
+        "valor": "70%",
+        "color": "09909f",
+        "colorHigh": "6bbcc5"
+      }
+    ]
+  }
+}

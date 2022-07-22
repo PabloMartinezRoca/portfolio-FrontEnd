@@ -15,61 +15,25 @@
                 <div class="row">
                     <div class="col-12" id="set-habilidades">
                         <!-- item habilidad -->
-                        <div class="row habilidad">
+                        <div class="row habilidad" *ngFor="let habilidad of habilidades.lista">
                             <div class="col-4 px-0"></div>
                             <div class="col-8 px-0">
                                 <div class="row">
                                     <div class="col-2 px-0 skill-pre-bar-container">
-                                        <div class="skill-pre-bar" style="--color: #66cccc; "></div>
+                                        <div class="skill-pre-bar" [style]="'--color: #'+habilidad.colorHigh+'; '"></div>
                                     </div>
                                     <div class="col-10 px-0 skill-bar-container barra-porcentaje-habilidades">
-                                        <div class="skill-bar" valor="90%" style="--color: #01cc9b; --max-width: 90%">
+                                        <div class="skill-bar" [style]="'--color: #'+habilidad.color+'; --max-width: '+habilidad.valor+'; '" [title]="habilidad.valor">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-4 skill-name-container ">
-                                <div class="skill-name" style="--color: #01cc9b;">TRABAJO EN EQUIPO</div>
-                            </div>
-                        </div>
-                        <!-- item habilidad -->
-                        <div class="row habilidad">
-                            <div class="col-4 px-0"></div>
-                            <div class="col-8 px-0">
-                                <div class="row">
-                                    <div class="col-2 px-0 skill-pre-bar-container">
-                                        <div class="skill-pre-bar" style="--color: #ccff66; "></div>
-                                    </div>
-                                    <div class="col-10 px-0 skill-bar-container barra-porcentaje-habilidades">
-                                        <div class="skill-bar" valor="60%" style="--color: #99cc00; --max-width: 60%">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4 skill-name-container ">
-                                <div class="skill-name" style="--color: #99cc00;">INGLÉS</div>
-                            </div>
-                        </div>
-                        <!-- item habilidad -->
-                        <div class="row habilidad">
-                            <div class="col-4 p-0"></div>
-                            <div class="col-8 p-0">
-                                <div class="row px-0">
-                                    <div class="col-2 px-0 skill-pre-bar-container">
-                                        <div class="skill-pre-bar" style="--color: #9999cc; "></div>
-                                    </div>
-                                    <div class="col-10 px-0 skill-bar-container barra-porcentaje-habilidades">
-                                        <div class="skill-bar" valor="80%" style="--color: #666699; --max-width: 80%">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4 skill-name-container ">
-                                <div class="skill-name" style="--color: #666699;">USO DE TECNOLOGÍAS</div>
+                                <div class="skill-name" style="--color: #{{habilidad.color}};">{{habilidad.nombre}}</div>
                             </div>
                         </div>
                         <!-- escala -->
-                        <div class="row escala">
+                        <div id="escalaHabilidades" class="row escala">
                             <div class="col-4 px-0"></div>
                             <div class="col-8 px-0">
                                 <div class="row">

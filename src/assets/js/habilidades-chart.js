@@ -1,11 +1,22 @@
 function viewSeccionHabilidades() {
-    var observer = new IntersectionObserver(function (entries) {
-        // isIntersecting is true when element and viewport are overlapping
-        // isIntersecting is false when element and viewport don't overlap
-        console.log(entries[0].isIntersecting === true);
-        if (entries[0].isIntersecting === true)
-            document.getElementById("set-habilidades").style.display = 'block';
-    }, { threshold: [0] });
+    
+  observer = new IntersectionObserver(
+    function (entries) {
+      // isIntersecting is true when element and viewport are overlapping
+      // isIntersecting is false when element and viewport don't overlap
+      // console.log(entries[0].isIntersecting === true);
+      if (entries[0].isIntersecting === true) {
+        const barras = document.querySelectorAll(".skill-bar");
 
-    observer.observe(document.getElementById("habilidades"));
+        barras.forEach((barra) => {
+          barra.style.display = "block";
+        });
+
+        observer.disconnect();
+      }
+    },
+    { threshold: [0] }
+  );
+
+  observer.observe(document.getElementById("set-habilidades"));
 }

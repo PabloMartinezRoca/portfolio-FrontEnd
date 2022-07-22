@@ -1,10 +1,18 @@
+.bg-habilidades-container {
+  background-image: linear-gradient(to bottom right, #000000, #1e465d);
+}
+#habilidades h1 {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
 .barra-porcentaje-habilidades {
     background: repeating-linear-gradient(
       to right,
       rgb(255, 255, 255, 1),
-      rgb(255, 255, 255, 1) 2px,
-      rgb(0, 0, 0, 0) 2px,
-      rgb(0, 0, 0, 0) calc((100% / 11) + 3px)
+      rgb(255, 255, 255, 1) 1px,
+      rgb(0, 0, 0, 0) 1px,
+      rgb(0, 0, 0, 0) calc((100% / 11) + 2px)
     );
   }
   
@@ -51,6 +59,7 @@
   }
   
   .skill-bar {
+    display: none;
     height: 1.5em;
     background-color: var(--color);
     border-left: 2px #ffffff solid;
@@ -63,7 +72,7 @@
   }
   
   .skill-bar::before {
-    content: attr(valor);
+    content: attr(title);
     position: absolute;
     padding: 4px 6px;
     background-color: var(--color);

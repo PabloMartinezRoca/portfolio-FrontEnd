@@ -93,18 +93,6 @@ p.educacion-periodo {
     font-size: 0.8em;
 }
 
-/* seccion: habilidades */
-#set-habilidades {
-    display: none;
-}
-.bg-habilidades-container {
-    background-image: linear-gradient(to bottom right, #000000, #1e465d);
-}
-#habilidades h1 {
-    color: #ffffff;
-    border-color: #ffffff;
-}
-
 /* seccion: proyectos */
 #proyectos {
     padding-bottom: 0;
