@@ -14,16 +14,16 @@
             </div>
         </div>
         <!-- item proyecto -->
-        <div class="row item-proyecto bg-item-proyecto">
+        <div class="row item-proyecto bg-item-proyecto" *ngFor="let proyecto of proyectos.lista">
             <div class="col-6">
                 <div class="row">
                     <div class="col-2"></div>
                     <div class="col-10 info-item-proyecto">
-                        <p class="proyecto-titulo">Portfolio Personal</p>
-                        <p class="proyecto-ambito">Argentina Programa #YoProgramo</p>
-                        <p class="proyecto-periodo">nov. 2022 - actualidad</p>
-                        <p class="proyecto-descripcion">Desarrollo de proyecto Web Full Stack.</p>
-                        <p class="proyecto-link">Link de visita <a href="" target="_blank">aquí</a>.</p>
+                        <p class="proyecto-titulo">{{proyecto.nombre}}</p>
+                        <p class="proyecto-ambito">{{proyecto.ambitoDeDesarrollo}}</p>
+                        <p class="proyecto-periodo"><span [innerHTML]="proyecto.fechaInicio"></span> - <span [innerHTML]="proyecto.fechaFinal"></span><span *ngIf="proyecto.fechaFinal == ''">actualidad</span></p>
+                        <p class="proyecto-descripcion">{{proyectos.descripcionProyecto}}</p>
+                        <p class="proyecto-link">Link de visita <a [href]="'http://'+proyecto.urlProyecto" target="_blank">aquí</a>.</p>
 
 
                     </div>
@@ -32,7 +32,7 @@
             <div class="col-6">
                 <div class="row">
                     <div class="col-10">
-                        <img class="img-fluid" src="./assets/imagenes/proyectos/snapshot-argentina-programa.jpg">
+                        <img class="img-fluid" [src]="'./assets/imagenes/proyectos/'+proyecto.urlImagen">
                     </div>
                     <div class="col-2"></div>
                 </div>

@@ -1,0 +1,35 @@
+{
+  "educacion": {
+    "lista": [
+      {
+        "urlLogo": "logo-escuela-philips.svg",
+        "institucionAcademica": "Escuela Técnica Philips Argentina",
+        "carrera": "Carrera de Técnico en Electrónica - Titulo secundario oficial A-978",
+        "titulos": [
+          {
+            "titulo": "Técnico Electrónico",
+            "fechaInicio": "mar. 1992",
+            "fechaFinal": "dic. 1997"
+          }
+        ]
+      },
+      {
+        "urlLogo": "logo-umai.png",
+        "institucionAcademica": "Universidad Maimónides",
+        "carrera": "Licenciatura en Tecnologías Multimediales - Titulo universitario oficial",
+        "titulos": [
+          {
+            "titulo": "Técnico en herramientas multimediales",
+            "fechaInicio": "mar. 1998",
+            "fechaFinal": "dic. 2000"
+          },
+          {
+            "titulo": "Licenciado en Multimedia",
+            "fechaInicio": "mar. 2001",
+            "fechaFinal": "dic. 2003"
+          }
+        ]
+      }
+    ]
+  }
+}

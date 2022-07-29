@@ -1,0 +1,27 @@
+{
+  "acercaDe": {
+    "apellido": "Martínez Roca",
+    "nombre": "Pablo Andrés",
+    "titulos": [
+      {
+        "nombre": "Licenciado en Tecnologías Multimediales"
+      },
+      {
+        "nombre": "Técnico Electrónico"
+      },
+      {
+        "nombre": "Docente Secundario en TIC"
+      },
+      {
+        "nombre": "Emprendedor"
+      },
+      {
+        "nombre": "Programador Entusiasta"
+      },
+      {
+        "nombre": "Estudiante autodidacta proactivo"
+      }
+    ],
+    "descripcion": "<p>Trabajo y me divierto con computadoras desde los 10 años. Apasionado de la tecnología y el entretenimiento, inicié mi carrera como casi todos los chicos: jugando.</p><p>Seguí estudios técnicos por tradición familiar y luego elegí devolver a la sociedad algo de todo lo aprendido: doy clases desde hace más de 20 años.</p><p>Fundé una agencia de Comunición en Punto de Venta donde día a día resuelvo los problemas y brindo soluciones a las necesidades de mis clientes.</p><p>Estoy en constante autoaprendizaje, intentando posicionarme a la vanguardia de lo que hago.</p>"
+  }
+}

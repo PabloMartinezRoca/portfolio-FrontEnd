@@ -17,43 +17,17 @@
         </div>
         <div class="col-7">
             <!-- item educación -->
-            <div class="row item-educacion">
+            <div class="row item-educacion" *ngFor="let educacion of educacion.lista">
                 <div class="col-3">
-                    <img class="img-fluid educacion-item-img" src="./assets/imagenes/logos-educacion/logo-escuela-philips.svg">
+                    <img class="img-fluid educacion-item-img" src="./assets/imagenes/logos-educacion/{{educacion.urlLogo}}">
                 </div>
                 <div class="col-9">
-                    <p class="educacion-institucion">Escuela Técnica Philips Argentina</p>
-                    <p class="educacion-carrera">Carrera de Técnico en Electrónica - Titulo secundario oficial A-978
-                    </p>
-                    <p class="educacion-titulo">Técnico Electrónico</p>
-                    <p class="educacion-periodo">mar. 1992 - dic. 1997</p>
-                </div>
-            </div>
-            <!-- item educación -->
-            <div class="row item-educacion">
-                <div class="col-3">
-                    <img class="img-fluid educacion-item-img" src="./assets/imagenes/logos-educacion/logo-umai.png">
-                </div>
-                <div class="col-9">
-                    <p class="educacion-institucion">Universidad Maimónides</p>
-                    <p class="educacion-carrera">Licenciatura en Tecnologías Multimediales - Titulo universitario
-                        oficial</p>
-                    <p class="educacion-titulo">Técnico en herramientas multimediales</p>
-                    <p class="educacion-periodo">mar. 1998 - dic. 2000</p>
-                    <p class="educacion-titulo">Licenciado en Multimedia</p>
-                    <p class="educacion-periodo">mar. 2001 - dic. 2003</p>
-                </div>
-            </div>
-            <!-- item educación -->
-            <div class="row item-educacion">
-                <div class="col-3">
-                    <img class="img-fluid educacion-item-img" src="">
-                </div>
-                <div class="col-9">
-                    <p class="educacion-institucion"></p>
-                    <p class="educacion-carrera"></p>
-                    <p class="educacion-titulo"></p>
-                    <p class="educacion-periodo"></p>
+                    <p class="educacion-institucion">{{educacion.institucionAcademica}}</p>
+                    <p class="educacion-carrera">{{educacion.carrera}}</p>
+                    <div *ngFor="let titulo of educacion.titulos">
+                        <p class="educacion-titulo">{{titulo.titulo}}</p>
+                        <p class="educacion-periodo">{{titulo.fechaInicio}} - {{titulo.fechaFinal}}<span *ngIf="titulo.fechaFinal ==''">actualidad</span></p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,0 +1,48 @@
+{
+  "experiencia": {
+    "lista": [
+      {
+        "urlLogo": "logo-dmice.svg",
+        "puestos": [
+          {
+            "puesto": "Director",
+            "fechaInicio": "ene. 2008",
+            "fechaFinal": "",
+            "duracion": "14 años 6 meses",
+            "ubicacion": "Argentina",
+            "descripcionActividades": "<p>Coordinación, ejecución, implementación y control integral de proyectos de Marketing Y Comunicación de diversa índole.<p>"
+          },
+          {
+            "puesto": "Project Manager",
+            "fechaInicio": "dic. 2006",
+            "fechaFinal": "",
+            "duracion": "15 años 7 meses",
+            "ubicacion": "Argentina",
+            "descripcionActividades": "<p>Coordinación, ejecución, implementación y control integral de proyectos de Marketing Y Comunicación de diversa índole.<p>"
+          }
+        ]
+      },
+      {
+        "urlLogo": "logo-escuela-philips.svg",
+        "puestos": [
+          {
+            "puesto": "Docente Titular Cátedra de Informática y TIC",
+            "fechaInicio": "mar. 1998",
+            "fechaFinal": "",
+            "duracion": "24 años 4 meses",
+            "ubicacion": "Ciudad de Buenos Aires, Argentina",
+            "descripcionActividades": "<p>Dictado de clases teóricas en nivel secundario técnico.</p>"
+          },
+          {
+            "puesto": "Departamento de Sistemas y Multimedia",
+            "fechaInicio": "mar. 1998",
+            "fechaFinal": "nov. 2006",
+            "duracion": "9 años 9 meses",
+            "ubicacion": "Ciudad de Buenos Aires, Argentina",
+            "descripcionActividades": "<p>Coordinación, ejecución, implementación y control integral de proyectos de Marketing y Comunicación de diversa índole.</p><p>Personal del departamento de sistemas.</p>"
+          }
+        ]
+      }
+    ]
+  }
+}

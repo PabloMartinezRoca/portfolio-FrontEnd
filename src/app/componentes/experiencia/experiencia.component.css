@@ -1,0 +1,7 @@
+#experiencia .tareas {
+    font-style: italic;
+}
+#experiencia .puesto {
+    font-weight: bolder !important;
+    font-size: 1.1em;
+}

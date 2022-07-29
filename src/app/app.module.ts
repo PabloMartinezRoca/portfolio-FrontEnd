@@ -13,6 +13,9 @@ import { HabilidadesComponent } from './componentes/habilidades/habilidades.comp
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { NavComponent } from './componentes/nav/nav.component';
+import { ContenidoGeneralComponent } from './componentes/contenido-general/contenido-general.component';
+
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ import { NavComponent } from './componentes/nav/nav.component';
     HabilidadesComponent,
     ProyectosComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    ContenidoGeneralComponent
   ],
   imports: [
     BrowserModule,
